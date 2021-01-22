@@ -1,0 +1,271 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .glass {
+  background: white;
+  height: 90vh;
+  width: 70%;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  z-index: 3;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+main .dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 30px 0 0 30px;
+  padding: 20px;
+}
+
+main .dashboard .user img {
+  width: 70px;
+}
+
+main .dashboard .user h3 {
+  color: #426696;
+  font-weight: 600;
+}
+
+main .dashboard .user p {
+  color: #426696;
+  font-weight: 300;
+}
+
+main .dashboard .links .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .dashboard .links .link img {
+  margin-right: 30px;
+  width: 30px;
+}
+
+main .dashboard .links .link h2 {
+  color: #426696;
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+main .dashboard .links .link h2:hover {
+  margin-left: 10px;
+}
+
+main .dashboard .pro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+main .dashboard .pro h2 {
+  text-transform: capitalize;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #426696;
+  font-weight: 600;
+}
+
+main .dashboard .pro img {
+  width: 100px;
+}
+
+main .active-games {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 20px;
+}
+
+main .active-games .status h1 {
+  color: #426696;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+main .active-games .status input {
+  width: 250px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 15px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  color: #426696;
+}
+
+main .active-games .status i {
+  color: #426696;
+}
+
+main .active-games .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+main .active-games .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+  border-radius: 10px;
+  margin: 10px 0;
+  color: #426696;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  min-height: 100px;
+}
+
+main .active-games .cards .card img {
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+main .active-games .cards .card .content {
+  margin-right: 10px;
+}
+
+main .active-games .cards .card .content h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main .active-games .cards .card .content p {
+  font-weight: 300;
+}
+
+main .active-games .cards .card .content .progressbar {
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+main .active-games .cards .card .content .progressbar span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+main .active-games .cards .card .percentage {
+  position: absolute;
+  font-weight: bold;
+  right: 20px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.circle1, .circle2 {
+  background: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.circle1 {
+  left: 5%;
+  top: 2%;
+}
+
+.circle2 {
+  right: 5%;
+  bottom: 2%;
+}
+/*# sourceMappingURL=style.css.map */
